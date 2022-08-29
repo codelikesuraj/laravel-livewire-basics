@@ -15,7 +15,6 @@
         @vite( 'resources/js/app.js')
     </head>
     <body class="antialiased">
-        <h2 class="text-lg font-semibold p-2 m-4">Standard Contact Form</h2>
         <div class="flex justify-center">
             <livewire:contact-form />
         </div>

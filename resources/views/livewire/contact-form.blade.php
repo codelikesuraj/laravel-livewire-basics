@@ -1,4 +1,5 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 px-5 my-5 text-sm gap-3 m-auto w-full lg:w-2/3">
+    <h2 class="col-span-1 sm:col-span-2 text-2xl font-semibold p-2 pl-0 m-4 ml-0">Standard Contact Form</h2>
     <div class="bg-gray-100 space-y-5 p-3 pt-20">
         <h1 class="text-3xl font-bold">Get in touch</h1>
         <p>Nullam risus blandlit ac aliquam justo Iplsum. Quam mauris volutpat massa dictumst amet. Sapien tortor
@@ -54,8 +55,8 @@
             <label class="block">
                 <button
                     class="inline-flex p-2 px-5 items-center bg-indigo-600 text-white hover:bg-indigo-700 tracking-widest disabled:opacity-50  text-base">
-                    <svg wire:target="submitForm" wire:loading.class="animate-spin -ml-1 mr-3 w-5 text-white" xmlns="http://www.w3.org/2000/svg"
-                        fill="none" viewBox="0 0 24 24">
+                    <svg wire:target="submitForm" wire:loading.class="animate-spin -ml-1 mr-3 w-5 text-white"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                         <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
                             stroke-width="4"></circle>
                         <path class="opacity-75" fill="currentColor"
