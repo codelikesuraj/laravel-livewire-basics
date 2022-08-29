@@ -15,8 +15,9 @@
         @vite( 'resources/js/app.js')
     </head>
     <body class="antialiased">
-        <div class="flex justify-center">
+        <div class="grid grid-cols-1 justify-center">
             <livewire:contact-form />
+            <livewire:search-dropdown />
         </div>
 
         <!-- Scripts -->

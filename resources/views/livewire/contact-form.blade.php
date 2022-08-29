@@ -1,5 +1,5 @@
-<div class="grid grid-cols-1 sm:grid-cols-2 px-5 my-5 text-sm gap-3 m-auto w-full lg:w-2/3">
-    <h2 class="col-span-1 sm:col-span-2 text-2xl font-semibold p-2 pl-0 m-4 ml-0">Standard Contact Form</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 px-5 my-5 text-sm gap-3 m-auto w-full lg:w-2/3 min-h-screen">
+    <h2 class="col-span-1 sm:col-span-2 text-2xl font-semibold p-2 pl-0 m-4 ml-0">Livewire Contact Form</h2>
     <div class="bg-gray-100 space-y-5 p-3 pt-20">
         <h1 class="text-3xl font-bold">Get in touch</h1>
         <p>Nullam risus blandlit ac aliquam justo Iplsum. Quam mauris volutpat massa dictumst amet. Sapien tortor
