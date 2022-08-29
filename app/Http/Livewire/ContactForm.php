@@ -30,19 +30,32 @@ class ContactForm extends Component
     {
         $contact = $this->validate();
 
+        // create contact
+        $this->create($contact);
+
+        // mail to user
+        $this->mail($contact);
+
+        // reset form
+        $this->resetForm();
+
+        session()->flash('status', 'Contact details have been mailed successfully');
+    }
+
+    private function mail($contact)
+    {
+        Mail::to($contact['email'])->send(new ContactFormMailable($contact));
+    }
+
+    private function create($contact)
+    {
         $contact['name'] = $this->name;
         $contact['email'] = $this->email;
         $contact['phone'] = $this->phone;
         $contact['message'] = $this->message;
 
-        Mail::to($this->email)->send(new ContactFormMailable($contact));
-
         // store user in database
-        User::create($contact);
-
-        $this->resetForm();
-
-        session()->flash('status', 'Contact details have been mailed successfully');
+        return User::create($contact);
     }
 
     private function resetForm()
