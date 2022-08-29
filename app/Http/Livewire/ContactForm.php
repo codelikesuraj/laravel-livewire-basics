@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Mail\ContactFormMailable;
+use App\Models\User;
 use Illuminate\Support\Facades\Mail;
 use Livewire\Component;
 
@@ -35,6 +36,9 @@ class ContactForm extends Component
         $contact['message'] = $this->message;
 
         Mail::to($this->email)->send(new ContactFormMailable($contact));
+
+        // store user in database
+        User::create($contact);
 
         $this->resetForm();
 
